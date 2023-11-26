@@ -1,0 +1,22 @@
+ques 1
+
+# Create data for the graph.
+dice<- c(7, 2, 6, 3, 4, 8)
+labels <- c("1", "2", "3", "4","5","6")
+# Plot the chart.
+pie(dice, labels)
+
+
+ques 2
+
+import numpy as np
+import pandas as pd
+df=pd.read_csv('studentsPerformance.csv')
+#For shape of data set
+shape = df.shape
+print("Shape = {}".format(shape))
+
+#To display the top rows of the dataset with their columns
+rows=df.head()
+print("Top rows:",rows)
+

@@ -1,0 +1,20 @@
+ques 1
+
+Student = data.frame(
+ Rollno=c(1,2,3,4,5),
+ Stud Name=c("Anastasia S","Dima R","Katherine S", "JAMES A","LAURA MARTIN"),
+ Adder=c("pune","mumbai","jadapsar","France","Mp"),
+ Marks=c(23,22,25,26,32),
+
+ques 2
+
+import pandas
+from sklearn import linear_model
+df = pandas.read_csv("data.csv")
+X = df[['Weight', 'Volume']]
+y = df['CO2']
+regr = linear_model.LinearRegression()
+regr.fit(X, y)
+#predict the CO2 emission of a car where the weight is 2300kg, and the volume is 1300cm3:
+predictedCO2 = regr.predict([[2300, 1300]])
+print(predictedCO2)
